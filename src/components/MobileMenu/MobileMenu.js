@@ -3,8 +3,6 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { DialogOverlay, DialogContent } from '@reach/dialog';
 
-import { COLORS, QUERIES } from '../../constants';
-
 import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
 import VisuallyHidden from '../VisuallyHidden';
@@ -20,22 +18,25 @@ const MobileMenu = ({ isOpen, onDismiss }) => {
 
         <StretchVertically />
         <Nav>
-          <NavLink href="/sale" style={{ '--color': COLORS.secondary }}>
+          <NavLink href="/sale" style={{ '--color': 'var(--color-secondary)' }}>
             Sale
           </NavLink>
-          <NavLink href="/new" style={{ '--color': COLORS.gray[900] }}>
+          <NavLink href="/new" style={{ '--color': 'var(--color-gray-900)' }}>
             New&nbsp;Releases
           </NavLink>
-          <NavLink href="/men" style={{ '--color': COLORS.gray[900] }}>
+          <NavLink href="/men" style={{ '--color': 'var(--color-gray-900)' }}>
             Men
           </NavLink>
-          <NavLink href="/women" style={{ '--color': COLORS.gray[900] }}>
+          <NavLink href="/women" style={{ '--color': 'var(--color-gray-900)' }}>
             Women
           </NavLink>
-          <NavLink href="/kids" style={{ '--color': COLORS.gray[900] }}>
+          <NavLink href="/kids" style={{ '--color': 'var(--color-gray-900)' }}>
             Kids
           </NavLink>
-          <NavLink href="/collections" style={{ '--color': COLORS.gray[900] }}>
+          <NavLink
+            href="/collections"
+            style={{ '--color': 'var(--color-gray-900)' }}
+          >
             Collections
           </NavLink>
         </Nav>
@@ -70,7 +71,7 @@ const Content = styled(DialogContent)`
   display: flex;
   flex-direction: column;
 
-  background: ${COLORS.white};
+  background: var(--color-white);
 `;
 
 const CloseButton = styled(UnstyledButton)`
@@ -99,7 +100,7 @@ const NavLink = styled.a`
 `;
 
 const FooterNavLink = styled(NavLink)`
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
   font-size: ${14 / 16}rem;
 `;
 
