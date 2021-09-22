@@ -7,9 +7,9 @@ import SearchInput from '../SearchInput';
 import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
 
-const SuperHeader = () => {
+const SuperHeader = ({ ...delegated }) => {
   return (
-    <Wrapper>
+    <Wrapper {...delegated}>
       <MarketingMessage>
         Free shipping on domestic orders over $75!
       </MarketingMessage>
