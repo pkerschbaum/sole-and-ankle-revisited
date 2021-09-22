@@ -68,7 +68,7 @@ const MainHeader = styled.div`
   border-bottom: 1px solid ${COLORS.gray[300]};
 
   @media ${QUERIES.phoneAndDown} {
-    padding: 18px 20px;
+    padding: 18px 16px;
   }
 `;
 

@@ -3,9 +3,9 @@ import styled from 'styled-components/macro';
 
 import { COLORS, WEIGHTS } from '../../constants';
 
-const Sidebar = () => {
+const Sidebar = ({ ...delegated }) => {
   return (
-    <Wrapper>
+    <Wrapper {...delegated}>
       <Link href="/lifestyle">Lifestyle</Link>
       <Link href="/jordan">Jordan</Link>
       <ActiveLink href="/running">Running</ActiveLink>
